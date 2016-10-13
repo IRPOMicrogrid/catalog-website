@@ -16,22 +16,74 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
     <!-- Custom styles for this template -->
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
   </head>
   <body>
     <nav class="navbar fixed-top">
-      <div class="container-fluid">   
+      <div class="container-fluid navi">   
         <div class="bar-content">
-            
+            <div class="col-sm-3 hidden-xs">
+               <div class="btn-left">
+
+                  <button class="btn btn-default dropdown-toggle" type="button" id="filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Filter
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="filter">
+                    <li class="dropdown-header">Types of locations</li>
+
+                    <li id="0"><a href="#poi"><i class="fa fa-star"></i>&nbsp;Points of Interest</a></li>
+
+                    <li><a href="#museum"><i class="fa fa-university"></i>&nbsp;Museums</a></li>
+
+                    <li><a href="#restaurant"><i class="fa fa-cutlery"></i>&nbsp;Restaurants</a></li>
+
+                    <li><a href="#shopping"><i class="fa fa-shopping-bag" aria-hidden="true"></i>&nbsp;Shopping</a></li>
+                  </ul>
+           </div>
+        </div>
+
+
+           <div class="col-sm-6">
+               <h2 class="title">Rural Microgrid Catalog</h2>
+           </div>
+
+           <div class="col-sm-3 hidden-xs">
+              <div class="location-arrow">
+                    <button class="btn btn-default btn-sm" onclick="getLocation()"><i class="fa fa-location-arrow fa-2x"></i></button>
+              </div>
         </div>
       </div>
-
+    </div>
+    <hr>
     </nav>
 
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 list-view hidden-xs">
+            <div class="well well-sm list-well">
+                <div class="list-group">
+                    <h2 class="list-group-item list-header-title">Rural Microgrids</h2>
+                    <button class="list-group-item"><h2 class="list-item">Testing</h2></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-9 map-view">
+            <div class="well well-sm">
+                    <div id="map">
 
+                    </div>
+            </div>
+                <script src="js/map.js"></script>
+                <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPBRxiKKAI6i2KaEHILpIh3K-F7eaCmy4&libraries=places&callback=initMap">
+                </script>
+        </div>
+    </div>
+</div>
 
 
   <!-- Bootstrap core JavaScript

@@ -1,0 +1,120 @@
+body {
+    overflow: hidden; 
+}
+
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+
+.bar-content{
+    color: black;
+}
+
+.title{
+    font-size: 25px;
+    font-weight: 200;
+    text-align: center;
+    color: black;
+}
+
+.btn-left{
+    margin-top: 15px;
+}
+
+.home-btn{
+    font-size: 13px;
+    text-align: center;
+    margin-right: 25px;
+    margin-left: 10px;
+}
+
+.well{
+    border-radius: 0px;
+}
+
+
+.list-header{
+    margin-top: 10px;
+}
+
+.list-header-title{
+    color:black;
+}
+
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.navbar{
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+
+hr{
+    margin: 0px;
+    padding: 0px;
+    border-top-color: black;
+}
+
+.dropdown{
+   padding: 10px 0 0 15px;
+}
+
+#filter{
+    font-size: 18px;
+}
+
+.dropdown li {
+    font-size: 16px;
+}
+
+.location-arrow{
+    text-align: right;
+    padding: 15px 15px 15px 0;
+}
+
+#map{
+    height: 1010px;
+}
+
+.map-view{
+    padding-left: 0px;
+}
+
+#right-panel{
+    font-family: 'Roboto','sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+    float:right;
+    height: 100%;
+    overflow: auto;
+    width: 390px;
+}
+
+.add-to-sch{
+    text-align: center;
+    float: right;
+    color: green;
+}
+
+.list-view{
+    padding: 0 0 0 15px;
+}
+
+.list-well{
+    height: 100vh;
+}
+
+.list-item{
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.list-container{
+    overflow: auto;
+    max-height: 1010px;
+}
